@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "RobotoRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OswaldBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OswaldBold/OswaldBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OswaldBold/OswaldBold.woff") format("woff"), url("../fonts/OswaldBold/OswaldBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OswaldExtraLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OswaldExtraLight/OswaldExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/OswaldExtraLight/OswaldExtraLight.woff") format("woff"), url("../fonts/OswaldExtraLight/OswaldExtraLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OswaldMedium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OswaldMedium/OswaldMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/OswaldMedium/OswaldMedium.woff") format("woff"), url("../fonts/OswaldMedium/OswaldMedium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OswaldLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OswaldLight/OswaldLight.eot?#iefix") format("embedded-opentype"), url("../fonts/OswaldLight/OswaldLight.woff") format("woff"), url("../fonts/OswaldLight/OswaldLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OswaldHeavy";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OswaldHeavy/OswaldHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/OswaldHeavy/OswaldHeavy.woff") format("woff"), url("../fonts/OswaldHeavy/OswaldHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OswaldExtraLightItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OswaldExtraLightItalic/OswaldExtraLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OswaldExtraLightItalic/OswaldExtraLightItalic.woff") format("woff"), url("../fonts/OswaldExtraLightItalic/OswaldExtraLightItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OswaldRegularItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OswaldRegularItalic/OswaldRegularItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OswaldRegularItalic/OswaldRegularItalic.woff") format("woff"), url("../fonts/OswaldRegularItalic/OswaldRegularItalic.ttf") format("truetype"); }

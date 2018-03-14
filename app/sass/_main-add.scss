@@ -1,0 +1,105 @@
+
+
+
+@import "_fancybox.scss";
+
+//main-add.scss
+
+// -------------- FAQ
+
+.faq-section{
+	#main{
+		margin-bottom: 50px;
+	}
+	.content{
+		padding: 0 15px;
+		.accordion{
+			height: 480px;
+			display: block;
+			position: relative;
+			overflow: hidden;
+			.section{
+				position: relative;
+			}
+			h3{
+				text-align: inherit;
+				outline: none;
+				border: 1px solid;
+				border-radius: 5px;
+				padding: 10px 20px;
+	    		font-weight: 400;
+				margin: 0;
+				margin-top: 10px;
+				&:hover{
+					cursor: pointer;
+				}
+			}
+
+			i{
+			    margin-top: -1px;
+			    margin-right: -5px;
+			    transition: all 0.5s ease-in-out;
+			    float: right;
+			    position: relative;
+			    display: inline-block;
+			}
+			p{
+				font-weight: 200;
+				margin-top: 5px;
+				padding: 0 10px;
+			}
+		}
+	}
+}
+
+
+// --------------- GALLERY
+.gallery-section{
+	margin-bottom: 100px;
+	.img-gallery{
+		padding: 20px;
+	}
+	
+}
+
+
+/*
+		               --- ОТЛАДКА ---
+*/
+
+// ГАЛЕРЕЯ
+.our-class-item .img-container, .feedback-author .img-container {
+   border: 0;
+}
+.gallery-image .gallery-image-item{
+	padding: 15px 15px;
+}
+.row.gallery-image{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 15px;
+	padding-left: 20px;
+	@media only screen and (max-width: 786px){
+		&{
+			padding-right: 10px;
+		}
+	}
+}
+
+// ФОРМА
+.contact-form{
+	color: white;
+}
+.form-group{
+	textarea::-webkit-input-placeholder, input::-webkit-input-placeholder {color:white;}
+	textarea::-moz-placeholder         , input::-moz-placeholder          {color:white;}
+	textarea:-moz-placeholder          , input:-moz-placeholder           {color:white;}
+	textarea:-ms-input-placeholder     , input:-ms-input-placeholder      {color:white;}
+	.form-control{
+		color: #e0e0e0;
+	}
+}
+.main-menu ul li > ul{
+	width: 100%;
+}
+

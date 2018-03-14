@@ -1,0 +1,287 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+.main-menu ul li {
+	font-size: 15px;
+}
+.main-menu ul li a {
+	padding: 19px 17px 20px;
+}
+body {
+	font-size: 15px;
+}
+.our-class-item {
+	font-size: 15px;
+}
+
+
+.toggleMenu {
+	display: block;
+}
+.main-menu {
+	background-color: #b14545;
+	display: none;
+	margin-top: 15px;
+	max-width: 350px;
+	width: 100%;
+	float: right;
+}
+.main-menu ul li {
+	float: none;
+}
+.main-menu ul li > ul {
+	position: static;
+	display: none;
+}
+.main-menu ul li.hover > ul {
+	display: block;
+}
+.feedback-author .img-container::before {
+	right: -50px;
+}
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.contact-map, .single-rules-container {
+	margin-bottom: 45px;
+}
+.about-section .img-container {
+	margin-bottom: 45px;
+}
+.feedback-author {
+	padding-left: 20px;
+}
+.contact-form {
+	padding: 45px 15px 30px;
+}
+.feedback-panel-icon {
+	padding-left: 15px;
+}
+.feedback-panel-icon .flaticon::before {
+	font-size: 20px;
+}
+.feedback-panel-text {
+	margin-left: 60px;
+}
+.register-now-text {
+	font-size: 12px;
+}
+.btn {
+	width: 158px;
+}
+.warning-404 strong {
+	font-size: 20em;
+}
+.warning-404 span {
+	font-size: 4em;
+}
+.warning-404 span::before {
+	left: 0;
+	font-size: 158px;
+	bottom: 60px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.hentry-content .icon-box h4 {
+	margin-top: 0;
+}
+.hentry-content .icon-box {
+	margin-bottom: 45px;
+}
+.feedback-author .img-container::before {
+	background-color: transparent;
+}
+
+body {
+	font-size: 14px;
+}
+.our-class-review-nav .prev span .flaticon::before, .our-class-review-nav .next span .flaticon::before {
+	font-size: 38px;
+}
+.our-class-review-nav .prev {
+	left: 10px;
+}
+.our-class-review-nav .next {
+	right: 10px;
+}
+.register-now-form {
+	margin-left: 0;
+}
+.banner-content h1 {
+	font-size: 4em;
+}
+.banner-content h2 {
+	font-size: 3.7em;
+}
+.feedback-author {
+	text-align: center;
+	margin-bottom: 25px;
+}
+.feedback-panel-text {
+	margin-bottom: 30px;
+}
+.feedback-author .feedback-author-desc {
+	padding-left: 0;
+}
+.warning-404 strong {
+	font-size: 17em;
+}
+.warning-404 span {
+	font-size: 3em;
+}
+.warning-404 span::before {
+	left: 0;
+	font-size: 140px;
+	bottom: 50px;
+}
+.sect-404 {
+    padding-bottom: 200px;
+}
+
+}
+
+@media only screen and (max-width : 600px) { 
+
+.warning-404 strong {
+	font-size: 17em;
+	margin-bottom: 15px;
+}
+.warning-404 span {
+	font-size: 3em;
+}
+.warning-404 span::before {
+	content: '';	
+}
+.sect-404 {
+    padding-bottom: 150px;
+}
+.sidebar {
+	margin-bottom: 45px;
+}
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.our-class-item {
+	margin-left: 0;
+	margin-right: 0;
+}
+.single-rules-container .single-rules .icon-block {
+	margin: 0 auto 20px;
+	float: none;
+}
+.sect-404 {
+    padding-top: 50px;
+}
+.warning-404 {
+	margin-bottom: 20px;
+}
+.warning-404 strong {
+	font-size: 14em;
+}
+.warning-404 span {
+	font-size: 2em;
+}
+.sect-404 {
+    padding-bottom: 120px;
+}
+.main-menu {
+	max-width: 290px;
+	margin-top: -20px;
+}
+.text-404 {
+	font-size: 1.5em;
+}
+.register-now-text {
+	font-size: 10px;
+}
+.logo {
+	width: 140px;
+}
+.banner-content h1 {
+	font-size: 3em;
+}
+.banner-content h2 {
+	font-size: 2.7em;
+}
+.logo::before,.logo::after {
+	top: 39px;
+}
+.logo .logo-main::before,.logo .logo-main::after {
+	top: 39px;
+}
+.logo-stuck {
+	top: 54px;
+}
+.banner-slide-item {
+	height: 800px;
+}
+.head-bar.stuck {
+    top: -39px;
+}
+.our-class-review-nav .prev span .flaticon::before, .our-class-review-nav .next span .flaticon::before {
+	font-size: 25px;
+}
+.toggleMenu {
+    margin-top: 50px;
+}
+.banner-content {
+	padding-top: 200px;
+}
+.feedback-panel-icon {
+	display: none;
+}
+.feedback-panel-text {
+	margin-left: 0;
+}
+.information-section .text-block {
+	margin-bottom: 30px;
+}
+.register-now .btn {
+	max-width: 100px;
+}
+.main-menu {
+	margin-top: 50px;
+}
+.prev-arrow .flaticon::before, .next-arrow .flaticon::before {
+	font-size: 30px;
+}
+.our-class-review-nav .prev, .our-class-review-nav .next {
+	margin-top: -45px;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
