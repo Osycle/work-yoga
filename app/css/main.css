@@ -1,4 +1,23 @@
 @charset "UTF-8";
+/**
+ 	[Color codes]
+ 	Main color: ##8e8e8e
+
+	*/
+/*
+ *
+ *[Table of contents]
+ *
+ *		1. Body / body
+ *		2. Header / .main-head
+ *		3. Menu / #main-menu
+ *		4. Left column / #leftcolumn
+ *		5. Right column / #rightcolumn
+ *		6. Blog post / .blog-post-section
+ *		10.Page banner / .page-banner
+ *		12. Footer / footer
+
+ */
 html.js .loader {
   background: none repeat scroll 0 0 #ffffff;
   bottom: 0;
@@ -194,6 +213,9 @@ img {
   font-family: "OswaldMedium", sans-serif;
   text-transform: uppercase; }
 
+/*
+ *	HEADER
+ */
 .main-head {
   position: relative; }
 
@@ -323,6 +345,9 @@ img {
 .sticky-wrapper {
   height: auto !important; }
 
+/*
+ *	SLIDER BANNER
+ */
 .main-banner {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -434,6 +459,10 @@ h1, h2, h3, h4, h5, h6 {
 .w202 {
   width: 202px; }
 
+/*
+ *	CONTENT
+ */
+/* information-section */
 .information-section {
   margin-bottom: 90px;
   position: relative; }
@@ -532,6 +561,7 @@ h1, h2, h3, h4, h5, h6 {
             -ms-transform: rotate(360deg);
             transform: rotate(360deg); }
 
+/*our-class*/
 .our-class-list {
   position: relative;
   z-index: 10;
@@ -613,6 +643,7 @@ h1, h2, h3, h4, h5, h6 {
   .our-class .title::before {
     background-color: #ec7575; }
 
+/* register-now */
 .register-now {
   background-image: url("../img/register-now-bg.jpg");
   background-repeat: no-repeat;
@@ -665,6 +696,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   bottom: 0; }
 
+/* our-team */
 .our-team {
   padding-top: 45px;
   padding-bottom: 20px; }
@@ -769,6 +801,7 @@ h1, h2, h3, h4, h5, h6 {
 .red-section {
   background-color: #b14545; }
 
+/* section feedback */
 .feedback {
   padding-bottom: 50px;
   padding-top: 47px; }
@@ -924,6 +957,9 @@ h1, h2, h3, h4, h5, h6 {
 .footer-bar {
   background-color: #1f1f1f; }
 
+/**
+	*	FOOTER
+	*/
 footer {
   text-align: center;
   background-image: url("../img/footer-bg.jpg");
@@ -1867,6 +1903,9 @@ h4 {
 /*
 		               --- ОТЛАДКА ---
 */
+.gallery {
+  overflow: hidden; }
+
 .our-class-item .img-container, .feedback-author .img-container {
   border: 0; }
 

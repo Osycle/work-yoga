@@ -46,20 +46,18 @@ $(function() {
 	});
 
 
-	$(".prev").click(function () {
+	$(".our-class-review-nav").on( "click", ".prev", function () {
 	    owlOurClass.trigger('prev.owl.carousel');
 	});
 
-	$(".next").click(function () {
+	$(".our-class-review-nav").on( "click", ".next", function () {
 	    owlOurClass.trigger('next.owl.carousel');
 	});
 
 
-	new WOW(
-  {
-    offset:       200,          // distance to the element when triggering the animation (default is 0)
-  }
-		).init();
+	new WOW({
+    offset: 200,          // distance to the element when triggering the animation (default is 0)
+  }).init();
 
 
 	$(".main-menu li a").each(function() {
@@ -68,7 +66,7 @@ $(function() {
 		};
 	})
 	
-	$(".toggle_mnu").click(function(e) {
+	$("document.body").on( "click", ".toggle_menu", function(e) {
 		e.preventDefault();
 		$(".sandwich").toggleClass("active");
 		$(this).toggleClass("active");
@@ -76,7 +74,7 @@ $(function() {
 	});
 
 
-$(".accordeon .acc_content").hide().prev().click(function() {
+$("document.body").hide().prev().on( "click", ".accordeon .acc_content", function() {
   $(this).parents(".accordeon").find(".acc_content").not(this).slideUp().parents('.accordion_in').removeClass("active");
   $(this).next().not(":visible").slideDown().parents('.accordion_in').addClass("active");
 });
@@ -85,8 +83,8 @@ $(".accordeon .accordion_in.active").find(".acc_content").show();
 
 	 $(function() {
 		if ($('body').width() < 1200) {
-			$(".main-menu li").unbind('mouseenter mouseleave');
-			$(".main-menu li a.parent").unbind('click').bind('click', function(e) {
+			$(".main-menu li").off('mouseenter mouseleave');
+			$(".main-menu li a.parent").off('click').on('click', function(e) {
 				// Необходимоо привязать к элементу ссылки для предотвращения "всплывания"
 				e.preventDefault();
 				$(this).parent("li").toggleClass("hover");
@@ -94,8 +92,8 @@ $(".accordeon .accordion_in.active").find(".acc_content").show();
 		} 
 		if ($('body').width() > 1200) {
 			$(".main-menu li").removeClass("hover");
-			$(".main-menu li a").unbind('click');
-			$(".main-menu li").unbind('mouseenter mouseleave').bind('mouseenter mouseleave', function() {
+			$(".main-menu li a").off('click');
+			$(".main-menu li").off('mouseenter mouseleave').on('mouseenter mouseleave', function() {
 			 	// Необходимо привязать к элементу li для предотвращения запуска события mouseleave при перемещении курсора мыши над подменю
 			 	$(this).toggleClass('hover');
 			});
@@ -121,11 +119,10 @@ $(".accordeon .accordion_in.active").find(".acc_content").show();
 	});
 
 	
-	$(".prev").click(function () {
+	$(".feedback-review-nav-wrap").on( "click", ".feedback-review-nav .prev", function () {
 	    owlReview.trigger('prev.owl.carousel');
 	});
-
-	$(".next").click(function () {
+	$(".feedback-review-nav-wrap").on( "click", ".feedback-review-nav .next", function () {
 	    owlReview.trigger('next.owl.carousel');
 	});
 
@@ -147,10 +144,10 @@ $(".accordeon .accordion_in.active").find(".acc_content").show();
 
 	};
 
-	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
+	$("document.body").on("dragstart", "img, a", function(event) { event.preventDefault(); });
 	
 
-$(window).load(function() {
+$(window).on("load", function() {
 
 	$(".loader_inner").fadeOut();
 	$(".loader").delay(400).fadeOut("slow");
@@ -163,17 +160,17 @@ $(window).load(function() {
 	//	ACCORDION
 	accFaq();
 	function accFaq(){
-		var acc_faq = ".faq-section .accordion";
-		if(acc_faq == undefined)
+		var acc_faq = $(".faq-section .accordion") || null;
+		if( !acc_faq )
 			return;
 
-		$( acc_faq ).accordion({
+		acc_faq.accordion({
 			animate: 600,
 			header: "h3",
 			collapsible: true
 		});
 
-		$(acc_faq).find("h3").on("click", function(){
+		$( "body" ).on("click", ".faq-section .accordion h3", function(){
 			$(this).siblings("h3").find("i").css("transform", "");
 			$(this).find("i").css("transform", "rotate(90deg)");
 		});

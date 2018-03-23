@@ -68,6 +68,9 @@
 */
 
 // ГАЛЕРЕЯ
+.gallery{
+	overflow: hidden;
+}
 .our-class-item .img-container, .feedback-author .img-container {
    border: 0;
 }
