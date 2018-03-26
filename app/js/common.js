@@ -109,7 +109,7 @@ $(".accordeon .accordion_in.active").find(".acc_content").show();
 	};
 
 
-
+	if( $('.feedback-carousel').length != 0 )
 	owlReview = $('.feedback-carousel').owlCarousel({
 	    loop:true,
 	    items:1,
@@ -117,7 +117,7 @@ $(".accordeon .accordion_in.active").find(".acc_content").show();
 	    animateIn: 'fadeIn',
 	    autoHeight: true,
 	});
-
+	$(".loader").hide();
 	
 	$(".feedback-review-nav-wrap").on( "click", ".feedback-review-nav .prev", function () {
 	    owlReview.trigger('prev.owl.carousel');
