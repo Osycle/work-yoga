@@ -47,7 +47,6 @@ body {
   font-family: "OswaldLight", sans-serif;
   font-weight: normal;
   font-size: 16px;
-  min-width: 320px;
   position: relative;
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
@@ -1861,9 +1860,11 @@ h4 {
   margin-bottom: 50px; }
 
 .faq-section .content {
-  padding: 0 15px; }
+  padding: 0 15px;
+  margin: 30px 0; }
+  .faq-section .content ~ div {
+    float: left; }
   .faq-section .content .accordion {
-    height: 480px;
     display: block;
     position: relative;
     overflow: hidden; }
@@ -1941,3 +1942,24 @@ h4 {
 
 .main-menu ul li > ul {
   width: 100%; }
+
+.table {
+  display: block;
+  overflow: auto; }
+
+@media (min-width: 1200px) {
+  .information-section .skew_sub-1 {
+    -webkit-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    transform: skewY(5deg); } }
+
+@media (min-width: 1200px) {
+  .our-class.skew__deg-2 {
+    margin-bottom: -188px;
+    margin-top: -216px;
+    padding-bottom: 250px;
+    padding-top: 200px; }
+  .our-class .skew_sub-1 {
+    -webkit-transform: skewY(9.5deg);
+    -ms-transform: skewY(9.5deg);
+    transform: skewY(9.5deg); } }

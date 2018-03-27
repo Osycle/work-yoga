@@ -13,8 +13,12 @@
 	}
 	.content{
 		padding: 0 15px;
+		margin: 30px 0;
+		& ~ div {
+			float: left;
+		}
 		.accordion{
-			height: 480px;
+			//min-height: 450px;
 			display: block;
 			position: relative;
 			overflow: hidden;
@@ -106,3 +110,30 @@
 	width: 100%;
 }
 
+// Правки вёрстки
+.table{
+	display: block;
+  overflow: auto;
+}
+
+
+.information-section{
+	@media ( min-width: 1200px ) {
+		& .skew_sub-1{
+			transform: skewY(5deg);
+		}
+	}
+}
+.our-class{
+	@media ( min-width: 1200px ) {
+		&.skew__deg-2{
+			margin-bottom: -188px;
+			margin-top: -216px;
+			padding-bottom: 250px;
+			padding-top: 200px;
+		}
+		& .skew_sub-1{
+			transform: skewY(9.5deg);
+		}
+	}
+}
