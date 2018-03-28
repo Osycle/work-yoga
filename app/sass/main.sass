@@ -1,10 +1,10 @@
 @import "bourbon/bourbon"
 
-$main-color: #8e8e8e
+$main-color: #333;
 
 /**
  	[Color codes]
- 	Main color: ##8e8e8e
+ 	Main color: #8e8e8e
 
 	*/
 
@@ -69,7 +69,7 @@ body textarea:required:valid
 	display: none
 
 .text-block
-	color: #8e8e8e
+	color: $main-color
 	font-size: em(18px)
 
 .ulli
@@ -384,14 +384,15 @@ img
 
 @keyframes scalebg
 	0% 
-		background-size: auto 100%
-	100% 
+		opacity: 0
 		background-size: auto 120%
+	100% 
+		background-size: auto 100%
 
 .main-banner-slide
 	.owl-item.active
 		.banner-slide-bg 
-			animation: scalebg 30s
+			animation: scalebg 2s
 		.banner-content
 			h1,h2,.btn
 				opacity: 1
@@ -1076,7 +1077,7 @@ footer
 
 .hentry-content 
 	.icon-box
-		color: #989898
+		color: #333
 		text-align: center
 		font-size: em(16px)
 		padding: 0 30px
@@ -1091,7 +1092,7 @@ footer
 	.flaticon
 		&::before
 			font-size: 35px  
-			color: #989898
+			color: #333
 
 
 .contact-page-form
@@ -1196,7 +1197,7 @@ footer
 			font-family: "OswaldRegularItalic", sans-serif
 			margin-bottom: 8px
 			a
-				color: #8e8e8e
+				color: $main-color
 			.flaticon
 				&::before
 					color: #c2c2c2
@@ -1255,7 +1256,7 @@ footer
 			@extend .text-block
 
 .meta-tag
-	color: #8e8e8e
+	color: $main-color
 	label
 		font-family: "OswaldMedium", sans-serif
 		color: #353535
@@ -1375,7 +1376,7 @@ footer
 .out-class-container
 	.our-class-item
 		p
-			color: #8e8e8e
+			color: $main-color
 
 .table 
 	> thead 

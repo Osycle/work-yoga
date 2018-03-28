@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /**
  	[Color codes]
- 	Main color: ##8e8e8e
+ 	Main color: #8e8e8e
 
 	*/
 /*
@@ -64,7 +64,7 @@ body textarea:required:valid {
   display: none; }
 
 .text-block, .copy, .single-post .text-block .text-content, .single-post-inner .text-block .text-content, .comments-list .text-block p, .meta-tag a, .single-rules-container .single-rules .text-block p, .single-class-post .text-block, .accordion_in .acc_content {
-  color: #8e8e8e;
+  color: #333;
   font-size: 1.125em; }
 
 .ulli, .main-menu ul, .social-icons ul, .post-arhive ul, .single-price-box .single-price-list {
@@ -420,23 +420,25 @@ img {
 
 @-webkit-keyframes scalebg {
   0% {
-    -webkit-background-size: auto 100%;
-    background-size: auto 100%; }
-  100% {
+    opacity: 0;
     -webkit-background-size: auto 120%;
-    background-size: auto 120%; } }
+    background-size: auto 120%; }
+  100% {
+    -webkit-background-size: auto 100%;
+    background-size: auto 100%; } }
 
 @keyframes scalebg {
   0% {
-    -webkit-background-size: auto 100%;
-    background-size: auto 100%; }
-  100% {
+    opacity: 0;
     -webkit-background-size: auto 120%;
-    background-size: auto 120%; } }
+    background-size: auto 120%; }
+  100% {
+    -webkit-background-size: auto 100%;
+    background-size: auto 100%; } }
 
 .main-banner-slide .owl-item.active .banner-slide-bg {
-  -webkit-animation: scalebg 30s;
-  animation: scalebg 30s; }
+  -webkit-animation: scalebg 2s;
+  animation: scalebg 2s; }
 
 .main-banner-slide .owl-item.active .banner-content h1, .main-banner-slide .owl-item.active .banner-content h2, .main-banner-slide .owl-item.active .banner-content .btn {
   opacity: 1;
@@ -489,7 +491,7 @@ h1, h2, h3, h4, h5, h6 {
   .information-section .text-block, .information-section .copy, .information-section .single-post .text-block .text-content, .single-post .text-block .information-section .text-content, .information-section .single-post-inner .text-block .text-content, .single-post-inner .text-block .information-section .text-content, .information-section .comments-list .text-block p, .comments-list .text-block .information-section p, .information-section .meta-tag a, .meta-tag .information-section a, .information-section .single-rules-container .single-rules .text-block p, .single-rules-container .single-rules .text-block .information-section p, .information-section .accordion_in .acc_content, .accordion_in .information-section .acc_content {
     font-size: 1.3125em;
     font-family: "OswaldExtraLight", sans-serif;
-    color: #8e8e8e; }
+    color: #333; }
   .information-section .social-icons {
     margin-top: -25px; }
   .information-section .img-container {
@@ -1131,7 +1133,7 @@ footer {
     text-align: right; }
 
 .hentry-content .icon-box {
-  color: #989898;
+  color: #333;
   text-align: center;
   font-size: 1em;
   padding: 0 30px; }
@@ -1144,7 +1146,7 @@ footer {
 
 .icon .flaticon::before {
   font-size: 35px;
-  color: #989898; }
+  color: #333; }
 
 .contact-page-form h3 {
   font-size: 1.875em;
@@ -1243,7 +1245,7 @@ footer {
   font-family: "OswaldRegularItalic", sans-serif;
   margin-bottom: 8px; }
   .post-arhive ul li a {
-    color: #8e8e8e; }
+    color: #333; }
   .post-arhive ul li .flaticon::before {
     color: #c2c2c2;
     font-size: 16px;
@@ -1298,7 +1300,7 @@ footer {
           margin-right: 10px; }
 
 .meta-tag {
-  color: #8e8e8e; }
+  color: #333; }
   .meta-tag label {
     font-family: "OswaldMedium", sans-serif;
     color: #353535;
@@ -1414,7 +1416,7 @@ footer {
   transform-style: initial; }
 
 .out-class-container .our-class-item p {
-  color: #8e8e8e; }
+  color: #333; }
 
 .table > thead > tr > th {
   font-family: "OswaldMedium", sans-serif; }
@@ -1947,19 +1949,32 @@ h4 {
   display: block;
   overflow: auto; }
 
-@media (min-width: 1200px) {
-  .information-section .skew_sub-1 {
-    -webkit-transform: skewY(5deg);
-    -ms-transform: skewY(5deg);
-    transform: skewY(5deg); } }
+.information-section {
+  font-size: 1.15em; }
+  .information-section h3 {
+    color: #000;
+    font-weight: 700; }
+  .information-section p {
+    color: #333; }
+  @media (min-width: 1200px) {
+    .information-section .skew_sub-1 {
+      -webkit-transform: skewY(5deg);
+      -ms-transform: skewY(5deg);
+      transform: skewY(5deg); } }
 
 @media (min-width: 1200px) {
   .our-class.skew__deg-2 {
     margin-bottom: -188px;
     margin-top: -216px;
     padding-bottom: 250px;
-    padding-top: 200px; }
+    padding-top: 260px; }
   .our-class .skew_sub-1 {
     -webkit-transform: skewY(9.5deg);
     -ms-transform: skewY(9.5deg);
     transform: skewY(9.5deg); } }
+
+.about-section p {
+  margin: 45px 0;
+  font-family: 800;
+  font-size: 1.15em;
+  color: #333; }

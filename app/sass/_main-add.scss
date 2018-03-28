@@ -118,6 +118,14 @@
 
 
 .information-section{
+	font-size: 1.15em;
+	h3{
+		color: #000;
+		font-weight: 700;
+	}
+	p{
+		color: #333;
+	}
 	@media ( min-width: 1200px ) {
 		& .skew_sub-1{
 			transform: skewY(5deg);
@@ -130,10 +138,18 @@
 			margin-bottom: -188px;
 			margin-top: -216px;
 			padding-bottom: 250px;
-			padding-top: 200px;
+			padding-top: 260px;
 		}
 		& .skew_sub-1{
 			transform: skewY(9.5deg);
 		}
+	}
+}
+.about-section{
+	p{
+		margin: 45px 0;
+		font-family: 800;
+		font-size: 1.15em;
+		color: #333;
 	}
 }
