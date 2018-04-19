@@ -5,6 +5,8 @@
 
 //main-add.scss
 
+$color-1: #b14545;
+
 // -------------- FAQ
 
 .faq-section{
@@ -68,10 +70,10 @@
 
 
 /*
-		               --- ОТЛАДКА ---
+		               --- Add-ons for the template ---
 */
 
-// ГАЛЕРЕЯ
+// gallery
 .gallery{
 	overflow: hidden;
 }
@@ -120,7 +122,7 @@
 .information-section{
 	font-size: 1.15em;
 	h3{
-		color: #000;
+		color: rgba($color-1, 0.5);
 		font-weight: 700;
 	}
 	p{
@@ -151,5 +153,41 @@
 		font-family: 800;
 		font-size: 1.15em;
 		color: #333;
+	}
+}
+
+body{
+	*{
+		font-family: "OswaldLight", sans-serif !important;
+	}
+}
+.sidebar .single-post-recent .comment-content .time{
+	color: black;
+	font-weight: 800;
+
+}
+.single-post-recent .comment-content h3 a{
+	color: rgba(white, 0.9);
+}
+.comment-content{
+	.time{
+		color: $color-1;
+	}
+}
+.our-team-item .our-team-desc h3{
+	color: darken(rgba($color-1, 1), 10%);
+	font-weight: 800;
+}
+.ui-accordion-header-active{
+	color: $color-1;
+}
+.icon-box{
+	h4{
+		color: darkgray !important;
+	}
+	p{
+		//font-family: Arial !important;
+		//font-size: 0.8em;
+		color: $color-1;
 	}
 }

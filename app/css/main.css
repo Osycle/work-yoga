@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
  	[Color codes]
  	Main color: #8e8e8e
@@ -1904,7 +1903,7 @@ h4 {
     padding: 20px; }
 
 /*
-		               --- ОТЛАДКА ---
+		               --- Add-ons for the template ---
 */
 .gallery {
   overflow: hidden; }
@@ -1952,7 +1951,7 @@ h4 {
 .information-section {
   font-size: 1.15em; }
   .information-section h3 {
-    color: #000;
+    color: rgba(177, 69, 69, 0.5);
     font-weight: 700; }
   .information-section p {
     color: #333; }
@@ -1978,3 +1977,29 @@ h4 {
   font-family: 800;
   font-size: 1.15em;
   color: #333; }
+
+body * {
+  font-family: "OswaldLight", sans-serif !important; }
+
+.sidebar .single-post-recent .comment-content .time {
+  color: black;
+  font-weight: 800; }
+
+.single-post-recent .comment-content h3 a {
+  color: rgba(255, 255, 255, 0.9); }
+
+.comment-content .time {
+  color: #b14545; }
+
+.our-team-item .our-team-desc h3 {
+  color: #8c3737;
+  font-weight: 800; }
+
+.ui-accordion-header-active {
+  color: #b14545; }
+
+.icon-box h4 {
+  color: darkgray !important; }
+
+.icon-box p {
+  color: #b14545; }
