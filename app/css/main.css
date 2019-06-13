@@ -259,7 +259,7 @@ img {
     .main-menu ul li.hover > ul {
       opacity: 1;
       top: 100%;
-      background-color: #b14545; }
+      background-color: #00942d; }
     .main-menu ul li li.hover > ul {
       left: 100%;
       top: 0; }
@@ -306,7 +306,7 @@ img {
     height: 63px;
     background-position: 0 0;
     left: 100%;
-    background-color: #b14545;
+    background-color: #00942d;
     margin-left: 14px; }
   .logo::after {
     top: 64px;
@@ -316,7 +316,7 @@ img {
     left: auto;
     right: 100%;
     margin-right: 14px;
-    background-color: #b14545; }
+    background-color: #00942d; }
   .logo .logo-main {
     display: block;
     position: absolute;
@@ -643,6 +643,9 @@ h1, h2, h3, h4, h5, h6 {
   .our-class .title::before {
     background-color: #ec7575; }
 
+.our-class .skew_bg {
+  background-color: #00942d; }
+
 /* register-now */
 .register-now {
   background-image: url("../img/register-now-bg.jpg");
@@ -804,7 +807,8 @@ h1, h2, h3, h4, h5, h6 {
 /* section feedback */
 .feedback {
   padding-bottom: 50px;
-  padding-top: 47px; }
+  padding-top: 47px;
+  background-color: #00942d; }
   .feedback .title {
     color: #fff;
     margin-bottom: 25px; }

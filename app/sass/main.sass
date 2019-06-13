@@ -2,6 +2,9 @@
 
 $main-color: #333;
 
+$color-1: #b14545; //#b14545
+$color-2: #ec7575; //#ec7575
+$color-special: #00942d;
 /**
  	[Color codes]
  	Main color: #8e8e8e
@@ -195,7 +198,7 @@ img
 			position: relative
 			&.active
 				a
-					background-color: #ec7575
+					background-color: $color-2
 			a
 				text-transform: uppercase
 				display: block
@@ -204,12 +207,12 @@ img
 			&:hover
 				a
 					&.parent
-						background-color: #ec7575
+						background-color: $color-2
 			> ul
 				position: absolute
 				left: 0
 				z-index: 1000
-				background-color: #b14545
+				background-color: $color-1
 				list-style: none
 				top: -99999px    
 				opacity: 0     
@@ -228,12 +231,12 @@ img
 						white-space: nowrap
 						display: block
 						&:hover
-							background-color: #ec7575
+							background-color: $color-2
 			&.hover
 				> ul
 					opacity: 1
 					top: 100%
-					background-color: #b14545
+					background-color: $color-special
 			li
 				&.hover
 					> ul
@@ -281,7 +284,7 @@ img
 		height: 63px
 		background-position: 0 0
 		left: 100%
-		background-color: #b14545
+		background-color: $color-special
 		margin-left: 14px
 	&::after
 		@extend .before
@@ -292,7 +295,7 @@ img
 		left: auto
 		right: 100%
 		margin-right: 14px
-		background-color: #b14545
+		background-color: $color-special
 	.logo-main
 		display: block
 		position: absolute
@@ -511,7 +514,7 @@ h1, h2, h3, h4, h5, h6
 					color: #ff8625
 					.flaticon
 						&::before
-							color: #ec7575
+							color: $color-2
 							transform: rotate(360deg)
 							
 /*our-class*/
@@ -546,7 +549,7 @@ h1, h2, h3, h4, h5, h6
 		width: 260px
 		border-radius: 50%
 		overflow: hidden
-		border: 5px solid #ec7575
+		border: 5px solid $color-2
 		margin-bottom: 44px
 		position: relative
 		z-index: 1
@@ -580,7 +583,7 @@ h1, h2, h3, h4, h5, h6
 	&.red-arrow
 		.flaticon
 			&::before
-				color: #b14545
+				color: $color-1
 	&.black-arrow
 		.flaticon
 			&::before
@@ -597,7 +600,9 @@ h1, h2, h3, h4, h5, h6
 		color: #fff
 		margin-bottom: 38px
 		&::before
-			background-color: #ec7575
+			background-color: $color-2
+	.skew_bg
+		background-color: $color-special
 /* register-now */
 .register-now
 	background-image: url("../img/register-now-bg.jpg")
@@ -620,7 +625,7 @@ h1, h2, h3, h4, h5, h6
 
 .hvr-bounce-to-right
 	&::before
-		background-color: #ec7575
+		background-color: $color-2
 
 .register-now-text 
 	color: #fff
@@ -666,7 +671,7 @@ h1, h2, h3, h4, h5, h6
 		&::before
 			@extend .before
 			height: 1px
-			background-color: #ec7575
+			background-color: $color-2
 			left: 7px
 			right: 7px
 			width: auto
@@ -744,11 +749,12 @@ h1, h2, h3, h4, h5, h6
 		transition: all .5s ease
 
 .red-section
-	background-color: #b14545
+	background-color: $color-1
 /* section feedback */
 .feedback
 	padding-bottom: 50px
 	padding-top: 47px
+	background-color: $color-special
 	.title
 		color: #fff
 		margin-bottom: 25px
@@ -761,7 +767,7 @@ h1, h2, h3, h4, h5, h6
 		width: 164px
 		height: 164px
 		border-radius: 50%
-		border: 5px solid #ec7575
+		border: 5px solid $color-2
 		margin-bottom: 18px
 		display: inline-block
 		position: relative
@@ -797,7 +803,7 @@ h1, h2, h3, h4, h5, h6
 	line-height: em(30px)
 	border-radius: 7px
 	margin-left: 80px
-	background-color: #b14545
+	background-color: $color-1
 
 .feedback-panel-icon
 	float: left
@@ -1155,7 +1161,7 @@ footer
 			left: 0
 			width: 77px
 			height: 77px
-			background-color: #b14545
+			background-color: $color-1
 			text-align: center
 			color: #fff
 			font-size: 18px
@@ -1291,7 +1297,7 @@ footer
 		text-transform: uppercase
 		color: #fff
 	.panel-head
-		border-bottom: 1px solid #ec7575
+		border-bottom: 1px solid $color-2
 		padding-bottom: 28px
 		padding-top: 38px
 		h3
@@ -1300,7 +1306,7 @@ footer
 			margin-top: 0
 		.price
 			font-size: 48px
-			color: #b14545
+			color: $color-1
 			font-family: "OswaldMedium", sans-serif
 			display: inline-block
 			margin-right: 8px
@@ -1416,7 +1422,7 @@ footer
 .warning-404
 	strong
 		font-size: em(420px)
-		color: #b14545
+		color: $color-1
 		font-family: "OswaldLight", sans-serif
 		font-weight: normal
 		display: inline-block
@@ -1444,7 +1450,7 @@ footer
 	color: #929292
 	font-family: "OswaldExtraLightItalic", sans-serif
 	a
-		color: #b14545
+		color: $color-1
 	
 .sect-404
 	padding-top: 80px
@@ -1534,7 +1540,7 @@ h4
 			margin: 0 19px 0 0
 			width: 52px
 			height: 40px
-			background-color: #b14545
+			background-color: $color-1
 			float: left
 			border-radius: 4px
 			vertical-align: middle
