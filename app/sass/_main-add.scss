@@ -3,11 +3,9 @@
 
 @import "_fancybox.scss";
 
-//main-add.scss
+// additional edits to improve
 
-
-// -------------- FAQ
-
+// .faq
 .faq-section{
 	#main{
 		margin-bottom: 50px;
@@ -31,8 +29,10 @@
 				outline: none;
 				border: 1px solid;
 				border-radius: 5px;
+				font-size: em(24px);
 				padding: 10px 20px;
-	    		font-weight: 400;
+	    	font-weight: 400;
+	    	color: #000;
 				margin: 0;
 				margin-top: 10px;
 				&:hover{
@@ -41,24 +41,33 @@
 			}
 
 			i{
-			    margin-top: -1px;
-			    margin-right: -5px;
-			    transition: all 0.5s ease-in-out;
-			    float: right;
-			    position: relative;
-			    display: inline-block;
+		    margin-top: -1px;
+		    margin-right: -5px;
+		    transition: all 0.5s ease-in-out;
+		    float: right;
+		    font-weight: bolder;
+		    position: relative;
+		    display: inline-block;
 			}
 			p{
-				font-weight: 200;
+				font-weight: 400;
 				margin-top: 5px;
-				padding: 0 10px;
+				padding: 10px 10px;
 			}
 		}
 	}
 }
 
 
-// --------------- GALLERY
+// .gallery
+.gallery{
+	@media (max-width: 991px){
+		.gallery-image-item{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+}
 .gallery-section{
 	margin-bottom: 100px;
 	.img-gallery{
@@ -79,9 +88,7 @@
 .our-class-item .img-container, .feedback-author .img-container {
    border: 0;
 }
-.gallery-image .gallery-image-item{
-	padding: 15px 15px;
-}
+
 .row.gallery-image{
 	margin: 0;
 	padding: 0;
@@ -94,11 +101,11 @@
 	}
 }
 
-// ФОРМА
+
 .contact-form{
 	color: white;
 }
-.form-group{
+.contact-form .form-group{
 	textarea::-webkit-input-placeholder, input::-webkit-input-placeholder {color:white;}
 	textarea::-moz-placeholder         , input::-moz-placeholder          {color:white;}
 	textarea:-moz-placeholder          , input:-moz-placeholder           {color:white;}
@@ -111,15 +118,14 @@
 	width: 100%;
 }
 
-// Правки вёрстки
+
+
+
 .table{
 	display: block;
   overflow: auto;
 }
-
-
 .information-section{
-	font-size: 1.15em;
 	h3{
 		color: rgba($color-1, 0.5);
 		font-weight: 700;
@@ -150,28 +156,25 @@
 	p{
 		margin: 45px 0;
 		font-family: 800;
-		font-size: 1.15em;
 		color: #333;
 	}
 }
 
 body{
 	*{
-		font-family: "OswaldLight", sans-serif !important;
+		//font-family: "OswaldLight", sans-serif !important;
+	}
+	p{
+		font-family: "Open Sans";
 	}
 }
 .sidebar .single-post-recent .comment-content .time{
 	color: black;
-	font-weight: 800;
+	
 
 }
 .single-post-recent .comment-content h3 a{
 	color: rgba(white, 0.9);
-}
-.comment-content{
-	.time{
-		color: $color-1;
-	}
 }
 .our-team-item .our-team-desc h3{
 	color: darken(rgba($color-1, 1), 10%);
@@ -183,10 +186,5 @@ body{
 .icon-box{
 	h4{
 		color: darkgray !important;
-	}
-	p{
-		//font-family: Arial !important;
-		//font-size: 0.8em;
-		color: $color-1;
 	}
 }

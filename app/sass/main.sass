@@ -4,7 +4,10 @@ $main-color: #333;
 
 $color-1: #b14545; //#b14545
 $color-2: #ec7575; //#ec7575
-$color-special: #00942d;
+$color-special: #00942d
+$font-family-1: "Open Sans"
+$font-family-2: "OswaldLight", sans-serif
+
 /**
  	[Color codes]
  	Main color: #8e8e8e
@@ -26,6 +29,12 @@ $color-special: #00942d;
 
  */
 
+.color-1 
+	color: $color-1
+.color-1 
+	color: $color-2
+.color-special
+	color: $color-special
 
 html.js .loader
 	background: none repeat scroll 0 0 #ffffff
@@ -52,9 +61,9 @@ html.js .loader
 		position: absolute
 
 body
-	font-family: "OswaldLight", sans-serif
-	font-weight: normal
-	font-size: 16px
+	font-family: $font-family-2
+	//font-weight: normal
+	font-size: 15px
 	//min-width: 320px
 	position: relative
 	line-height: 1.4
@@ -68,12 +77,17 @@ body input:required:valid,
 body textarea:required:valid
 	color: green
 
+h1, h2, h3, h4
+	font-family: $font-family-2
+h3
+	font-weight: 600
 .hidden
 	display: none
 
 .text-block
 	color: $main-color
-	font-size: em(18px)
+	p
+		line-height: 1.7
 
 .ulli
 	padding: 0
@@ -105,7 +119,14 @@ a, a:hover, a:focus,  a:active
 
 img
 	max-width: 100%
-
+.btn-default
+	border-color: black
+	color: black
+	&:hover
+		border-color: $color-1
+		color: white
+		&:before
+			background-color: $color-1
 
 .skew 
 	position: relative
@@ -202,7 +223,7 @@ img
 			a
 				text-transform: uppercase
 				display: block
-				padding: 19px 21px
+				padding: 20px 21px
 				color: #fff
 			&:hover
 				a
@@ -366,7 +387,7 @@ img
 		bottom: -200px
 		position: relative
 		transition: all 1.3s ease
-		transition-delay: 1s
+		//transition-delay: 1s
 		color: #fff
 	h2
 		font-size: em(85px)
@@ -375,7 +396,7 @@ img
 		bottom: -200px
 		position: relative
 		transition: all 1.3s ease
-		transition-delay: 2.5s
+		transition-delay: .2s
 		color: #fff
 	.btn
 		text-shadow: none
@@ -383,19 +404,25 @@ img
 		bottom: -200px
 		position: relative
 		transition: all 1.3s ease
-		transition-delay: 3.5s
+		transition-delay: .5s
 
 @keyframes scalebg
 	0% 
 		opacity: 0
-		background-size: auto 120%
+		background-size: auto 105%
 	100% 
 		background-size: auto 100%
 
 .main-banner-slide
+	.banner-slide-bg 
+		opacity: 0
+		transform: scale(1.05)
+		transition: all 1s ease
 	.owl-item.active
 		.banner-slide-bg 
-			animation: scalebg 2s
+			//animation: scalebg 1s linear
+			opacity: 1
+			transform: none
 		.banner-content
 			h1,h2,.btn
 				opacity: 1
@@ -407,12 +434,11 @@ img
 .pdrn
 	padding-right: 0
 
-h1, h2, h3, h4, h5, h6
-	font-weight: normal
 
 .btn	
-	font-family: "OswaldLight", sans-serif
-	font-size: 18px
+	font-family: $font-family-1
+	font-weight: 600
+	font-size: 16px
 
 .w202
 	width: 202px
@@ -448,8 +474,6 @@ h1, h2, h3, h4, h5, h6
 			width: auto
 			right: 0
 	.text-block
-		font-size: em(21px)
-		font-family: "OswaldExtraLight", sans-serif
 		color: $main-color
 	.social-icons
 		margin-top: -25px
@@ -461,7 +485,7 @@ h1, h2, h3, h4, h5, h6
 .title
 	color: #000
 	font-size: em(30px)
-	font-family: "OswaldLight", sans-serif
+	font-family: $font-family-2
 	padding-left: 20px
 	text-transform: uppercase
 	position: relative
@@ -530,20 +554,19 @@ h1, h2, h3, h4, h5, h6
 	text-align: left
 	vertical-align: top
 	margin: 0 31px 50px 30px
-	font-size: 16px
+	font-size: 14px
+	line-height: 1.7
 	h3
 		color: #ff8484
 		font-size: em(36px)
-		font-family: "OswaldLight", sans-serif
 		margin-bottom: 32px
 		margin-top: 0
 		text-transform: uppercase
 		a
-			color: #ff8484
+			color: #fff
 	p
 		color: #fff
-		font-family: "OswaldLight", sans-serif
-		font-size: em(18px)
+		font-weight: 300
 	.img-container
 		height: 260px
 		width: 260px
@@ -632,11 +655,12 @@ h1, h2, h3, h4, h5, h6
 	h4
 		font-size: em(80px)
 		text-transform: uppercase
-		font-family: "OswaldLight", sans-serif
+		font-family: $font-family-2
 		margin: 0
+		color: inherit
 		line-height: .9
 	p
-		font-size: em(42px)
+		font-size: em(41px)
 		font-family: "OswaldExtraLightItalic", sans-serif
 		line-height: .9
 
@@ -681,8 +705,7 @@ h1, h2, h3, h4, h5, h6
 			margin: 0 0 15px
 		p
 			color: #585858
-			font-size: em(24px)
-			font-family: "OswaldExtraLight", sans-serif
+			font-size: em(18px)
 	.img-container
 		position: relative
 		height: 510px
@@ -760,7 +783,8 @@ h1, h2, h3, h4, h5, h6
 		margin-bottom: 25px
 		&::before
 			background-color: #FFF
-
+	&.shortcodes
+		background-color: white
 .feedback-author
 	padding-left: 93px
 	.img-container
@@ -796,14 +820,14 @@ h1, h2, h3, h4, h5, h6
 
 .feedback-panel-text
 	border: 2px solid #fa8080
-	font-size: em(18px)
-	font-family: "OswaldExtraLight", sans-serif
+	font-size: em(16px)
 	color: #fff
 	padding: 27px 10px 35px 26px
 	line-height: em(30px)
 	border-radius: 7px
+	font-style: italic
 	margin-left: 80px
-	background-color: $color-1
+	background-color: $color-special
 
 .feedback-panel-icon
 	float: left
@@ -879,16 +903,16 @@ h1, h2, h3, h4, h5, h6
 			height: 57px
 	.comment-content
 		overflow: hidden
-		color: #fff
 		h3
-			font-family: "OswaldMedium", sans-serif
 			margin: 0 0 10px
 			font-size: 17px
 			a
-				color: #fff
+				
 		.time
-			font-family: "OswaldExtraLightItalic", sans-serif
+			font-family: $font-family-1
 			font-size: 14px
+			color: #fff
+			font-style: italic
 
 .contact-form
 	background-color: #242424
@@ -907,7 +931,7 @@ h1, h2, h3, h4, h5, h6
 
 .btn-success
 	font-size: 18px
-	font-family: "OswaldLight", sans-serif
+	font-family: $font-family-2
 
 .footer-bar
 	background-color: #1f1f1f
@@ -1129,7 +1153,10 @@ footer
 
 .contacts-section, .pricing-section
 	padding-bottom: 65px 
-
+.contacts-section
+	.icon-box
+		p
+			font-weight: 400
 .title-page
 	margin-bottom: 45px
 	margin-top: 50px
@@ -1147,7 +1174,6 @@ footer
 	.white-section
 		padding-top: 45px
 		padding-bottom: 60px
-
 .post-meta
 	text-align: right
 
@@ -1161,7 +1187,7 @@ footer
 			left: 0
 			width: 77px
 			height: 77px
-			background-color: $color-1
+			background-color: $color-special
 			text-align: center
 			color: #fff
 			font-size: 18px
@@ -1228,6 +1254,8 @@ footer
 	text-align: center
 
 .comments-list
+	@media (max-width: 991px)
+		display: none
 	.media-left
 		padding-right: 25px
 	.img-block
@@ -1281,11 +1309,20 @@ footer
 	position: relative
 	overflow: hidden
 	background-color: #FFF
-	&.recomend
+	.btn-default
+		border-color: $color-1
+		color: $color-1
+		padding: 8px 8px
+		&:hover
+			color: white
+		&:before
+			background-color: $color-1
+	&.recommend
 		box-shadow: inset 0 0 0 5px #dbdbdb
+		border: 1px solid #dbdbdb
 	.bagage
 		position: absolute
-		background-color: #cf3434
+		background-color: darken($color-special, 5%)
 		width: 125px
 		height: 125px
 		top: -75px
@@ -1303,6 +1340,8 @@ footer
 		h3
 			@extend .title-box
 			margin-bottom: 14px
+			font-size: 2em
+			font-weight: 400
 			margin-top: 0
 		.price
 			font-size: 48px
@@ -1319,6 +1358,7 @@ footer
 	.single-price-list
 		padding: 26px 0 27px
 		@extend .ulli
+		font-family: $font-family-1
 		li
 			color: #585858
 			font-size: em(18px)
@@ -1381,6 +1421,8 @@ footer
 
 .out-class-container
 	.our-class-item
+		h3 a
+			color: $color-1
 		p
 			color: $main-color
 
@@ -1422,15 +1464,14 @@ footer
 .warning-404
 	strong
 		font-size: em(420px)
-		color: $color-1
-		font-family: "OswaldLight", sans-serif
+		color: $color-special
+		font-family: $font-family-2
 		font-weight: normal
 		display: inline-block
 		margin-right: 90px
 		line-height: .8
 	span
 		font-size: em(80px)
-		color: #191919
 		text-transform: uppercase
 		display: inline-block
 		font-family: "OswaldMedium", sans-serif
